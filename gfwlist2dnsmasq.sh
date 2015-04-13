@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Change this to your DNS server
-DNS='127.0.0.1#5353'
+DNS='127.0.0.1#5300'
 
 # Change this to your ipset name
 IPSET=gfwlist
 
 # Path to save you rule file
-RULE_FILE=./dnsmasq_list.conf
+RULE_FILE=./gfwlist.conf
 
 # Add your own extra domain here. One domain in a line.
 EX_DOMAIN='.google.com
@@ -23,8 +23,8 @@ EX_DOMAIN='.google.com
 .gvt2.com
 .gvt3.com
 .1e100.net
+.github.com
 .blogspot.tw'
-
 python ./gfwlist2dnsmasq.py
 
 echo '#extra domains' >> $RULE_FILE
