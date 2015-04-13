@@ -10,7 +10,8 @@ Using:
 -----
 First git clone
 ```bash
-git clone https://github.com/ferstar/gfwlist2dnsmasq.git```
+git clone https://github.com/ferstar/gfwlist2dnsmasq.git
+```
 Then Modify gfwlist2dnsmasq.sh:
 
 Change this to your DNS server:
