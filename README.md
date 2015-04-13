@@ -10,13 +10,12 @@ Using:
 -----
 First git clone
 ```bash
-git clone https://github.com/cokebar/gfwlist2dnsmasq.git
-```
+git clone https://github.com/ferstar/gfwlist2dnsmasq.git```
 Then Modify gfwlist2dnsmasq.sh:
 
 Change this to your DNS server:
 ```bash
-DNS='127.0.0.1#5353'
+DNS='127.0.0.1#5300'
 ```
 
 Change this to your ipset name:
@@ -26,7 +25,7 @@ IPSET=gfwlist
 
 Path to save you rule file:
 ```bash
-RULE_FILE=./dnsmasq_list.conf
+RULE_FILE=./gfwlist.conf
 ```
 
 Add your own extra domain here. One domain in a line. eg:
@@ -51,6 +50,3 @@ And then just cd to the directory and run gfwlist2dnsmasq.sh:
 cd gfwlist2dnsmasq
 ./gfwlist2dnsmasq.sh
 ```
-If you don't want to generate the rules by yourself, you can download the rule file from:
-
-https://github.com/cokebar/gfwlist2dnsmasq/releases
